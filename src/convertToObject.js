@@ -7,9 +7,9 @@
  */
 function convertToObject(sourceString) {
   const stylesArray = sourceString
-  .split(';')
-  .map(item => item.trim())
-  .filter(item => item !== '');
+    .split(';') // Поділяємо рядок на окремі CSS-властивості
+    .map(item => item.trim()) // Видаляємо зайві пробіли
+    .filter(item => item !== ''); // Видаляємо порожні елементи
 
   const stylesObject = {};
 
