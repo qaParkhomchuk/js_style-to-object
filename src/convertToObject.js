@@ -7,10 +7,7 @@
  */
 
 function convertToObject(sourceString) {
-  const stylesArray = sourceString
-    .split(';')
-    .map((item) => item.trim())
-    .filter((item) => item !== '');
+  const stylesArray = sourceString.split(';').map((item) => item.trim()).filter((item) => item !== '');
 
   const stylesObject = {};
 
